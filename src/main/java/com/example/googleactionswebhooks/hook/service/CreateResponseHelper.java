@@ -1,7 +1,7 @@
 package com.example.googleactionswebhooks.hook.service;
 
-import dk.danskespil.voice.voicewebhookapp.hook.google.api.generic.*;
-import dk.danskespil.voice.voicewebhookapp.hook.google.api.response.GAResponse;
+import com.example.googleactionswebhooks.hook.google.api.generic.*;
+import com.example.googleactionswebhooks.hook.google.api.response.GAResponse;
 
 import java.util.HashMap;
 import java.util.List;
