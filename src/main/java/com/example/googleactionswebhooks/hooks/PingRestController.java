@@ -7,10 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.LocalDateTime;
 
 @RestController
-@RequestMapping("/api/ping")
+@RequestMapping
 public class PingRestController {
-    @GetMapping("/")
+    @GetMapping("/api/ping/")
     public String ping(){
         return "ponnnngg... " + LocalDateTime.now();
+    }
+
+    @GetMapping("/")
+    public String welcome(){
+        return "Welcome!!... " + LocalDateTime.now();
     }
 }
