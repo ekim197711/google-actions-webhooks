@@ -1,4 +1,3 @@
-curl https://mikes-heroku-demo1.herokuapp.com/api/ping/
+curl https://google-actions-webhooks.herokuapp.com/api/ping/
 
-
-curl https://mikes-heroku-demo1.herokuapp.com/api/scene/toilet
+curl -d "{}" -H "Content-Type: application/json" "https://google-actions-webhooks.herokuapp.com/api/scene/toilet"
