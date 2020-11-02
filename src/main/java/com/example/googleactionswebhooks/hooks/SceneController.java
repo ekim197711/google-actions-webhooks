@@ -20,7 +20,7 @@ public class SceneController {
         log.info("Request: " + request);
         return new ObjectMapper().writeValueAsString(nextScene(request));
     }
- @PostMapping("/toilet")
+    @RequestMapping("/toilet")
     public GAResponse nextScene(@RequestBody GARequest request){
         log.info("Next scene BEGIN");
         log.info("Request: " + request);
