@@ -1,0 +1,14 @@
+GARequest(
+handler=GAHandler(name=welcome),
+intent=GAIntent(name=actions.intent.MAIN,
+params={},
+query=Talk to Hook Demo),
+scene=
+GAScene(name=actions.scene.START_CONVERSATION,
+slotFillingStatus=UNSPECIFIED,
+slots={},
+next=GANextScene(name=Start)),
+session=GASession(id=ABwppHH5D2xf-6hes3WDlzsCRF9VqEEMTGrK6iHYFwiNbS93bPS4ZEfwlIvFxnGS30pxsbaIsGw, params={},
+typeOverrides=[]), user=GAUser(locale=en-US, params={}),
+home=GAHome(params={}),
+device=GADevice(capabilities=[SPEECH, LONG_FORM_AUDIO]))
