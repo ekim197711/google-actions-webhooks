@@ -14,27 +14,21 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class SceneController {
 
-    @PostMapping("/toiletstr")
-    public String nextSceneStr(@RequestBody GARequest request) throws JsonProcessingException {
-        log.info("Next scene BEGIN");
-        log.info("Request: " + request);
-        return new ObjectMapper().writeValueAsString(nextScene(request));
-    }
-    @RequestMapping(path="/toilet", method={RequestMethod.POST}, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(path="/", method={RequestMethod.POST}, consumes = MediaType.APPLICATION_JSON_VALUE)
     public GAResponse nextScene(@RequestBody GARequest request){
         log.info("Next scene BEGIN");
         log.info("Request: " + request);
 
         GAResponse response = new GAResponse(
                 new GAPrompt(false,
-                        new GAFirstSimple("This text comes from the server! Muahhahaha",null),
+                        new GAFirstSimple("This text comes from the server! You slay the dragon.",null),
                         null,
                         null,
                         null,
                         null,
                         null,
                         null),
-                new GAScene("PlayGames",null,null, new GANextScene("Toilet")),
+                new GAScene(null,null,null, new GANextScene("YOU_WIN")),
                 request.getSession(), request.getUser(), request.getHome(),
                 request.getDevice(), new GAExpected(null, null));
 
