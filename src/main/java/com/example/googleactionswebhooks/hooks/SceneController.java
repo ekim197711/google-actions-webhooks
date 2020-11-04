@@ -21,7 +21,7 @@ public class SceneController {
 
         GAResponse response = new GAResponse(
                 new GAPrompt(false,
-                        new GAFirstSimple("This text comes from the server! You slay the dragon.",null),
+                        new GAFirstSimple("This text comes from the server! You slay the monster.",null),
                         null,
                         null,
                         null,

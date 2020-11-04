@@ -9,10 +9,6 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping
 public class PingRestController {
-    @GetMapping("/api/ping/")
-    public String ping(){
-        return "ponnnngg... " + LocalDateTime.now();
-    }
 
     @GetMapping("/")
     public String welcome(){
