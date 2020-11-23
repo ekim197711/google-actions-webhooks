@@ -1,6 +1,7 @@
 package com.example.googleactionswebhooks.hook.google.api.generic;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,6 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 public class GAPrompt {
     private Boolean override;
     private GAFirstSimple firstSimple;
